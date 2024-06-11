@@ -222,6 +222,22 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a highly scalable self-training framework for incrementally adapting vision-based end-to-end autonomous driving policies in a semi-supervised manner, i.e., over a continual stream of incoming video data. To facilitate large-scale model training (e.g., open web or unlabeled data), we do not assume access to ground-truth labels and instead estimate pseudo-label policy targets for each video. Our framework comprises three key components: knowledge distillation, a sample purification module, and an exploration and knowledge retention mechanism. First, given sequential image frames, we pseudo-label the data and estimate uncertainty using an ensemble of inverse dynamics models. The uncertainty is used to select the most informative samples to add to an experience replay buffer. We specifically select high-uncertainty pseudo-labels to facilitate the exploration and learning of new and diverse driving skills. However, in contrast to prior work in continual learning that assumes ground-truth labeled samples, the uncertain pseudo-labels can introduce significant noise. Thus, we also pair the exploration with a label refinement module, which makes use of consistency constraints to re-label the noisy exploratory samples and effectively learn from diverse data. Trained as a complete never-ending learning system, we demonstrate state-of-the-art performance on training from domain-changing data as well as millions of images from the open web. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- <section class="section">
   <div class="container is-max-desktop">
 
@@ -391,6 +407,20 @@
     </div>
   </div>
 </footer> -->
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Examples</h2>
+          <video controls>
+          <source src="./static/videos/infydriver.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section id=" BibTeX"">
   <div class="container">
     <div class="columns is-centered has-text-centered">
