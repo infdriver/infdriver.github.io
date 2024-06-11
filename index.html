@@ -179,7 +179,7 @@
   </div>
 </section> -->
 
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -194,7 +194,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -230,14 +230,7 @@
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p class="my-paragraph">
-          Our proposed framework comprises the following steps: 
-          (1) uncertainty-aware training of an initial (i.e., teacher) VO model; 
-          (2) pseudo-labeling with the removal of low-confidence and potentially noisy samples; 
-          (3) self-training with pseudo-labeled and auxiliary prediction tasks of a robust VO student model. 
-          Specifically, we first train an ego-motion prediction teacher model over a small initial dataset, e.g., nuScenes.
-          We then expand the original dataset through pseudo-labeling of in-the-wild videos.
-          After that, we employ multiple auxiliary prediction tasks, including segmentation, flow, depth, and audio, as part of the semi-supervised training process
-          Finally, we leverage uncertainty-based filtering of potentially noisy pseudo labels and train a robust student model.
+          We present &infin;-Driver, an agent that continually learns from unlabeled incoming video data. For each video in the video stream, the agent employs an ensemble of inverse dynamics models to infer waypoint pseudo-labels and their uncertainty (higher uncertainty is depicted in red). Noisy pseudo-labels are automatically refined through consistency-based re-labeling and confidence-based filtering. Next, a driving policy student model is trained over incoming and episodic memory replay data. The memory buffer is updated to incorporate high-uncertainty samples. This maintains a diverse set of samples to retain knowledge and prevent forgetting, despite only viewing a given image once. Towards learning a generalized driving policy, our efficient framework enables highly scalable training, i.e., over millions of video frames from the web.
           </p>
           <!--
           <ol>
