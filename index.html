@@ -462,30 +462,52 @@
           </p>
         </div>
         <div class="column">
-          <img src="./static/images/table_open_web.png" width="60%" />
+          <img src="./static/images/table_open_web.png" width="50%" />
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- <section class="section">
+<section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Result</h2> -->
         <div class="content has-text-justified">
           <p class="my-paragraph">
-          <b>Qualitative Analysis on KITTI..</b> 
-          We find that incorporating audio and segmentation tasks as part of the semi-supervised learning process significantly improves ego-pose estimation on KITTI.
+          <b>Qualitative Analysis of Incremental Learning Over Cities.</b> 
+          We shows the ADE scores on each city’s hold-out evaluation set. 
+          Performance is measured after the model has completed training on the last city’s image collection. 
+          According to the figure, we demonstrate that after incrementally training over ten cities, our &infin;-Driver consistently outperforms other baseline models in each city under all buffer settings.
           </p>
         </div>
         <div class="column">
-          <img src="./resources/qua_result.png" width="80%" />
+          <img src="./static/images/fig_over_cities.png" width="100%" />
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Result</h2> -->
+        <div class="content has-text-justified">
+          <p class="my-paragraph">
+          <b>Qualitative Analysis on Open Web Data.</b> 
+          We displays the trend of ADE score as &infin;-Driver incrementally trained on YouTube data. We plot the trend by selecting the ADE scores measured after the model has seen 2, 4, 6, 8, and 10 million images. There is a significant gap between our method and other baselines.
+          </p>
+        </div>
+        <div class="column">
+          <img src="./static/images/fig_open_web.png" width="50%" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">
