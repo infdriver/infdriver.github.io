@@ -431,7 +431,7 @@
         <h2 class="title is-3">Result</h2>
         <div class="content has-text-justified">
           <p class="my-paragraph">
-          <b>Evaluation of Incremental Learning Over Cities..</b> 
+          <b>Evaluation of Incremental Learning Over Cities.</b> 
           We present the results of incremental learning on image collections sorted by cities with varying buffer sizes: 3,000, 6,000, and 9,000. 
           L<sub>−1</sub>, F<sub>−1</sub>, I<sub>−1</sub> represents the evaluations after the model trains on the last image collection. Our &infin;-Driver outperforms other baselines across all metrics and exhibits a significant advantage on the Average Loss and Forgetting measures compared to other baseline models, especially on buffer sizes 3,000 and 6,000. 
           This indicates that our filter mechanism and temporal consistency re-labeling method can effectively remove and refine noisy samples. Additionally, it demonstrates that our uncertainty-based buffer sampling method can select more informative samples into the buffer. 
@@ -446,27 +446,28 @@
   </div>
 </section>
 
-<!-- <section class="section">
+<section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+        <h2 class="title is-3">Result</h2>
         <div class="content has-text-justified">
           <p class="my-paragraph">
-          <b>Average Quantitative Results across Datasets.</b> 
-          We test on KITTI (sequences 00-10), Argoverse 2, and the unseen regions in nuScenes. 
-          All results are the average over all scenes. We present translation error, rotation 
-          error and scale error. Approaches such as TartanVO do not estimate real-world scale 
-          but may be aligned with ground truth (GT) scale in evaluation. A, S, F, D are the 
-          abbreviation of Audio, Seg, Flow, Depth.
+          <b>Evaluation of Incremental Learning on Open Web Data.</b> 
+          To further demonstrate the generalization ability of &infin;-Driver, we conduct open web experiments that continuously train on the YouTube dataset. 
+          It is important to note that all samples within the evaluation set are <i> entirely unseen </i> to &infin;-Driver before evaluation.
+          We present the revised Average Loss, Forgetting, and ADE measured on the evaluation set after the model completes the final training phase.
+          &infin;-Driver obtains the best result on Forgetting, which indicates that the model’s final performance on the evaluation set essentially matches the model’s best performance. 
+          The lowest Average Loss and ADE demonstrate that the model exhibits best generalization capabilities among the analyzed models.
           </p>
         </div>
         <div class="column">
-          <img src="./resources/result2.png" width="80%" />
+          <img src="./static/images/table_open_web.png" width="100%" />
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <!-- <section class="section">
   <div class="container">
