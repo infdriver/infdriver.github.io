@@ -432,18 +432,14 @@
         <div class="content has-text-justified">
           <p class="my-paragraph">
           <b>Evaluation of Incremental Learning Over Cities..</b> 
-          We abbreviate 'intrinsics-free' as I (i.e., a method which does not assume the intrinsics) 
-          and 'real-world scale' as S (i.e., a method is able to recover real-world scale). To ensure 
-          meaningful comparison, we categorize models based on supervision type. Firstly, we present 
-          unsupervised learning methods, followed by supervised learning methods, then generalized VO 
-          methods, and finally our XVO ablation. In the case of TartanVO, we analyze robustness to 
-          noise applied to the intrinsics. We train two teacher models: one based on KITTI (as shown 
-          in supervised learning approaches) and the other on nuScenes (as displayed at the end of 
-          the Table with ablations).
+          We present the results of incremental learning on image collections sorted by cities with varying buffer sizes: 3,000, 6,000, and 9,000. 
+          L<sub>−1</sub>, F<sub>−1</sub>, I<sub>−1</sub> represents the evaluations after the model trains on the last image collection. Our &infin;-Driver outperforms other baselines across all metrics and exhibits a significant advantage on the Average Loss and Forgetting measures compared to other baseline models, especially on buffer sizes 3,000 and 6,000. 
+          This indicates that our filter mechanism and temporal consistency re-labeling method can effectively remove and refine noisy samples. Additionally, it demonstrates that our uncertainty-based buffer sampling method can select more informative samples into the buffer. 
+          Thus, our buffer is enriched with more informative samples and less misleading labels. It enhances the model’s ability to retain previously acquired knowledge without hindering the model from learning new incoming knowledge.
           </p>
         </div>
         <div class="column">
-          <img src="。/static/images/table_over_cities.jpg" width="100%" />
+          <img src="./static/images/table_over_cities.jpg" width="100%" />
         </div>
       </div>
     </div>
